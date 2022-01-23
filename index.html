@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <style>
-	#login-facebook {
-		background-color: blue;
-		margin:; 
+	input {
+		display: block;
+		width: 50vh;
+		margin: auto;
+		margin-bottom: 7vh;
+		height: 7vh;
+		text-align: center;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		border-radius: 15px;
+		font-size: large;
+		border: 1px solid grey;
+	}
+
+	body {
+		text-align: center;
+		/* background-image: url('undraw_secure_login_pdn4.svg'); */
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	}
+
+	.form-input {
+		width: 50%;
+		margin: auto;
+	}
+
+	.t-div {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.button {
+		background-color: rgb(123, 89, 245);
+		border: none;
+		height: 6vh;
+		color: white;
 	}
 </style>
-	<head>
-		<title>
-			dsc login/signup page
-		</title>
-	</head>
-	<body>
-		<h1>DSC MMUST</h1>
-		<p>Sign up to see upcoming events photos <br/> and videos from DSC MMUST</p>
-		<form>
-			<button id="login-facebook" action="######">Login with Facebook</button>
-		    <hr>OR<hr>
-		    <input type="email;mobile-number" placeholder="Mobile Number or Email">
-		    <input type="text" placeholder="Full Name">
-		    <input type="text" placeholder="Username">
-		    <input type="password" placeholder="Password">
-		    <button action="######">Sign up</button>
 
-		</form>
-		<p>By signing up,you agree to our<br/>Terms & Privacy Policy.</p>
+<head>
+	<title>
+		dsc login/signup page
+	</title>
+</head>
 
-	</body>
+<body>
+	<div class="t-div">
+		<div class="form-input">
+			<img src="undraw_secure_login_pdn4.svg" alt="login" width="80%">
+		</div>
+		<div class="form-input">
+				<h1>Signup</h1>
+				<p>Signup to see upcoming events</p>
+				<br>
+			<form style="height: 100%; margin-top: 7vh;">
+				<input type="email;mobile-number" placeholder="Mobile Number or Email">
+				<input type="text" placeholder="Full Name">
+				<input type="password" placeholder="Password">
+				<input type="submit" class="button" action="#" value="Login"></input>
+			</form>
+		</div>
+
+	</div>
+
+	<p>By signing up,you agree to our<br/><a href="#">Terms</a> & <a href="#">Privacy Policy</a>.</p>
+
+</body>
+
 </html>
